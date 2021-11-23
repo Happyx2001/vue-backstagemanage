@@ -1,0 +1,22 @@
+项目优化
+1、生成打包报告
+	vue-cli-service build --report
+2、第三方库启用CDN
+3、Element-UI组件按需加载
+4、路由懒加载
+5、首页内容定制
+
+重点！！！！  如下
+6、通过 vue.config.js 修改 webpack 的默认配置
+configureWebpack 和 chainWebpack 定义Webpack打包配置
+chainWebpack 自定义打包入口
+7、通过externals 加载外部CDN资源
+减少打包时的体积
+8、通过 CDN优化Element-UI 打包
+
+PS：{
+利用 babel-plugin-transform-remove-console ，在使用 build 指令时，移除全部console
+}
+
+
+plugin的使用：利用 plugin 在打包时移除了所有的 console 语句
